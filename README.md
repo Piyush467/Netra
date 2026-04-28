@@ -1,11 +1,9 @@
 # 🚀 Netra – Deep Packet Inspection Engine
 ![C++](https://img.shields.io/badge/Language-C%2B%2B-blue.svg)
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20MacOS-lightgrey)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-orange)
-\
 
 ---
 
@@ -30,15 +28,29 @@ Even though modern internet traffic is encrypted, critical metadata still exists
 
 ## 🏗️ System Architecture
 
-```mermaid
-flowchart TD
-    A[PCAP Input] --> B[Packet Parser]
-    B --> C[Flow Manager (5-Tuple)]
-    C --> D[SNI Extractor (TLS)]
-    D --> E[Rule Engine]
-    E --> F[Forward Packet]
-    E --> G[Drop Packet]
-```
+        +-------------------+
+        |   PCAP Input      |
+        +-------------------+
+                  ↓
+        +-------------------+
+        | Packet Parser     |
+        +-------------------+
+                  ↓
+        +-------------------+
+        | Flow Manager      |
+        |   (5-Tuple)       |
+        +-------------------+
+                  ↓
+        +-------------------+
+        | SNI Extractor     |
+        |   (TLS)           |
+        +-------------------+
+                  ↓
+        +-------------------+
+        | Rule Engine       |
+        +-------------------+
+            ↓          ↓
+        Forward      Drop
 
 ---
 
