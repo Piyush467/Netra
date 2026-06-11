@@ -190,7 +190,7 @@ Netra generates:
 
 Supported filtering:
 
-| Type        | Description                        |
+| Types      | Description                        |
 | ----------- | ---------------------------------- |
 | IP          | Block traffic from specific source |
 | Domain      | Match SNI strings                  |
