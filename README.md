@@ -212,7 +212,7 @@ Supported filtering:
 
 * Real-time packet capture (libpcap)
 * Web-based monitoring dashboard
-* Dynamic rule configuration (JSON)
+* Dynamic rules configuration (JSON)
 * AI-based anomaly detection
 * QUIC / HTTP3 support
 
