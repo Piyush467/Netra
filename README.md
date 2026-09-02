@@ -177,7 +177,7 @@ g++ -std=c++17 -O2 -I include -o netra src/*.cpp
 
 ## 📊 Output
 
-Netra generates:
+Netra generate:
 
 * Total packets processed
 * Forwarded vs dropped packets
@@ -214,7 +214,7 @@ Supported filtering:
 * Web-based monitoring dashboard
 * Dynamic rules configuration (JSON)
 * AI-based anomaly detection
-* QUIC / HTTP3 support
+* QUIC / HTTP3 supports
 
 ---
 
